@@ -3,15 +3,21 @@
     
 <head>
     <title>Title of the document</title>
-    <script type="text/javascript">
-        var c = document.getElementById('a');
-        var cc = canvas.getContext('2d');
-        cc.fillRect(50, 50, 150, 100);
-    </script>
+    <style type="text/css">
+        canvas {
+            border: 1px dotted;
+        }
+    </style>
 </head>
 
 <body>
     <canvas id="a" width="300" height="225"></canvas>
+    
+    <script type="text/javascript">
+        var c = document.getElementById('a');
+        var cc = c.getContext('2d');
+        cc.fillRect(50, 50, 150, 100);
+    </script>
 </body>
 
 </html>

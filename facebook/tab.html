@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" style="overflow: hidden">
+<head>
+    <title>Telekom</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.1.min.js"></script>
+	<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	body {
+		width:810px;
+		border:0;
+		font-family: Arial, Helvetica,sans-serif;
+		font-size: 62.5%;
+	}
+	
+	#main {
+		background: #000000 url(img/header.jpg) no-repeat left top;
+		padding-top: 300px;
+		padding-bottom: 30px;
+	}
+	
+	#box {
+		width: 750px;
+		margin: auto;		
+	}
+	
+	#box-top, #box-bottom {
+		height: 6px;
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: left top;
+	}
+	
+	#box-top {
+		background-image: url(img/box-top.png);
+	}
+	
+	#box-content {
+		height: 900px;
+		border-left: 1px solid #d0d0d0;
+		border-right: 1px solid #d0d0d0;
+		background-color: #fff;
+	}
+	
+	#box-bottom {
+		background-image: url(img/box-bottom.png);
+		background-position: left bottom;
+	}
+	</style>
+
+</head>
+<body>
+
+	<div id="fb-root"></div>
+	<script type="text/javascript">
+		(function() {
+		  var e = document.createElement('script');
+		  e.type = 'text/javascript';
+		  e.src = document.location.protocol +
+			'//connect.facebook.net/en_US/all.js';
+		  e.async = true;
+		  document.getElementById('fb-root').appendChild(e);
+		}());
+
+		window.fbAsyncInit = function()
+		{
+			FB.init({
+				appId  : '527687183962868',
+				status : true,
+				cookie : true,
+				xfbml  : true
+			});
+
+			FB.Canvas.setAutoGrow();
+		}
+	</script>
+
+	<div id="main">
+		<div id="box">
+			<div id="box-top"></div>
+			<div id="box-content">
+				<dl>
+					<dt></dt>
+					<dd></dd>
+					
+				</dl>
+			</div>
+			<div id="box-bottom"></div>
+		</div>
+	</div>
+
+</body>
